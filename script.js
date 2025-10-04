@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const taskText = taskInput.value.trim();
         
         // Check if input is empty
-        if (taskText === "") {
+        if (taskText === "taskText") {
             alert("Please enter a task!");
             return;
         }
