@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const taskText = taskInput.value.trim();
         
         // Check if input is empty
-        if (taskText === "taskText") {
+        if (taskText === "") {
             alert("Please enter a task!");
             return;
         }
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Create remove button
         const removeButton = document.createElement('button');
         removeButton.textContent = 'Remove';
-        removeButton.className = 'remove-btn';
+       removeButton.classList.add('remove-btn');
         
         // Add click event to remove button to delete the task
         removeButton.onclick = function() {
